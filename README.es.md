@@ -4,6 +4,14 @@
 
 Mini laboratorio educativo de codificación médica con **Gemma 4** y un catálogo de 11.008 códigos CIE-10. Una pantalla, sin instalación de paquetes ni base de datos.
 
+## Sesión de ejemplo
+
+Carga un caso de práctica, contrasta el código propuesto con el catálogo y repasa con las preguntas. Estas capturas muestran la interfaz y un resultado de ejemplo para `K21.9`.
+
+| Entrada del caso y consulta local | Resumen, resultado del catálogo y preguntas |
+| --- | --- |
+| ![Entrada del caso con carga de imagen y consulta local de K21.9](docs/screenshots/study-input.png) | ![Sesión de estudio con propuesta K21.9, descripción del catálogo, preguntas y limitaciones](docs/screenshots/study-result.png) |
+
 ## Qué hace
 
 - Analiza texto o imágenes PNG/JPEG/WebP de casos ficticios.

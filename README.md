@@ -4,6 +4,14 @@
 
 A lightweight medical coding study tool powered by **Gemma 4** and a local catalog of **11,008 ICD-10 codes with Spanish descriptions**. One screen, no package installation, and no database required.
 
+## Example session
+
+Upload a practice case, review the proposed code against the catalog, and use the questions to study. These screenshots show the Spanish-language interface and an example result for `K21.9`.
+
+| Case input and local code lookup | Summary, catalog result, and study questions |
+| --- | --- |
+| ![Case input with image upload and local K21.9 lookup](docs/screenshots/study-input.png) | ![Study session showing the proposed K21.9 code, catalog description, questions, and limitations](docs/screenshots/study-result.png) |
+
 ## Features
 
 - Analyze fictional clinical cases entered as text or uploaded as PNG, JPEG, or WebP images.
