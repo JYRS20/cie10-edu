@@ -1,6 +1,6 @@
 # CIE-10 Edu
 
-Mini laboratorio educativo de codificación médica con **Gemma 4** y el catálogo CIE-10 reutilizado de MediFlow. Una pantalla, sin instalación de paquetes ni base de datos.
+Mini laboratorio educativo de codificación médica con **Gemma 4** y un catálogo de 11.008 códigos CIE-10. Una pantalla, sin instalación de paquetes ni base de datos.
 
 ## Qué hace
 
@@ -41,7 +41,7 @@ Puedes usar `examples/caso_neumonia.png`, una imagen generada con texto ficticio
 python -m unittest discover -s tests -v
 ```
 
-Las pruebas no consumen API ni modifican MediFlow. Verifican normalización, catálogo, contrato de respuesta y entradas inválidas. Las llamadas reales dependen del acceso y cuota de la cuenta; no hay afirmación de precisión clínica ni de latencia garantizada.
+Las pruebas no consumen API ni utilizan una base de datos. Verifican normalización, catálogo, contrato de respuesta y entradas inválidas. Las llamadas reales dependen del acceso y cuota de la cuenta; no hay afirmación de precisión clínica ni de latencia garantizada.
 
 ### Verificación local del prototipo (31/10/2026)
 
@@ -57,8 +57,8 @@ Estas comprobaciones se realizaron con una clave autorizada solo en el entorno d
 
 Herramienta educativa, no sistema de diagnóstico, tratamiento o priorización clínica. Que un código exista no demuestra que corresponda al caso. Gemma puede equivocarse o interpretar mal una imagen; la compresión también puede reducir legibilidad. La evidencia textual y las preguntas son generadas por IA y requieren revisión. No hay PDF, historial persistente, login ni LangGraph en esta demo.
 
-## Reutilización y atribución
+## Licencia y procedencia
 
-Derivado de [MediFlow equipo 02](https://github.com/No-Country-simulation/G10-LATAM-TEAM-02-MediFlowI-Agente-IA), licencia MIT: catálogo `cie10_catalog.json`, algoritmo de normalización y estrategia de compresión. La compresión se adapta aquí a Canvas del navegador. Ver `NOTICE.md`, `LICENSE` y `data/PROVENANCE.md`. No se ha copiado la base de datos, documentos de pacientes ni credenciales del proyecto original.
+El proyecto incorpora componentes adaptados bajo licencia MIT. Los avisos de copyright y las condiciones de uso se conservan en `LICENSE` y `NOTICE.md`. La procedencia del catálogo se documenta en `data/PROVENANCE.md`.
 
-La procedencia del catálogo entregado se conserva; no se afirma que represente todas las modificaciones nacionales ni la edición más reciente de CIE-10.
+No se afirma que el catálogo represente todas las modificaciones nacionales ni la edición más reciente de CIE-10.
